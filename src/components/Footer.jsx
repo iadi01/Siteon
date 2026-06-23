@@ -91,7 +91,7 @@ const Footer = () => {
               <div className="w-7 h-7 rounded-lg bg-[#FF5500]/10 border border-[#FF5500]/20 flex items-center justify-center flex-shrink-0">
                 <Mail className="w-3.5 h-3.5 text-[#FF5500]" />
               </div>
-              <a href="mailto:adityasharma10@amityonline.com" className="hover:text-[#FF5500] transition-colors text-xs">
+              <a href="mailto:adityasharma10@amityonline.com" aria-label="Send email to Aditya Sharma" className="hover:text-[#FF5500] transition-colors text-xs">
                 adityasharma10@amityonline.com
               </a>
             </li>
@@ -99,7 +99,7 @@ const Footer = () => {
               <div className="w-7 h-7 rounded-lg bg-[#FF5500]/10 border border-[#FF5500]/20 flex items-center justify-center flex-shrink-0">
                 <Phone className="w-3.5 h-3.5 text-[#FF5500]" />
               </div>
-              <a href="tel:+919006814060" className="hover:text-[#FF5500] transition-colors">+91 90068 14060</a>
+              <a href="tel:+919006814060" aria-label="Call +91 90068 14060" className="hover:text-[#FF5500] transition-colors">+91 90068 14060</a>
             </li>
             <li className="flex items-start gap-3 text-zinc-400 text-sm">
               <div className="w-7 h-7 rounded-lg bg-[#FF5500]/10 border border-[#FF5500]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
