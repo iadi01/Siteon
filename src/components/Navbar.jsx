@@ -90,40 +90,73 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.25 }}
-            className="md:hidden fixed inset-0 z-40 flex flex-col p-8 pt-28 border-t border-white/5"
-            style={{ backgroundColor: '#0a0a0a' }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="md:hidden fixed inset-0 z-40 flex flex-col p-6 pt-24 overflow-y-auto"
+            style={{ backgroundColor: '#050505' }}
           >
-            <div className="absolute top-0 right-0 w-64 h-64 glow-orange opacity-15 pointer-events-none" />
+            {/* Ambient Background */}
+            <div className="absolute top-0 left-0 w-full h-full noise-overlay opacity-20 pointer-events-none" />
+            <div className="absolute -top-20 -right-20 w-80 h-80 bg-[#FF5500]/10 rounded-full blur-[100px] pointer-events-none" />
+            <div className="absolute bottom-10 -left-20 w-64 h-64 bg-[#FF5500]/5 rounded-full blur-[100px] pointer-events-none" />
 
-            <div className="flex flex-col gap-1 relative z-10">
-              {navLinks.map((link, i) => (
-                <NavLink
-                  key={link.path}
-                  to={link.path}
-                  style={{ animationDelay: `${i * 0.05}s` }}
-                  className={({ isActive }) =>
-                    `text-3xl font-display font-black tracking-tight py-3 px-4 rounded-xl transition-all animate-fade-in-up ${
-                      isActive
-                        ? 'text-[#FF5500]'
-                        : 'text-white/60 hover:text-white'
-                    }`
-                  }
-                >
-                  {link.label}
-                </NavLink>
-              ))}
+            <div className="flex-1 flex flex-col justify-center relative z-10 my-4 min-h-[max-content]">
+              <div className="flex flex-col gap-2">
+                {navLinks.map((link, i) => (
+                  <motion.div
+                    key={link.path}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.1 + i * 0.05, duration: 0.4 }}
+                  >
+                    <NavLink
+                      to={link.path}
+                      onClick={() => setIsOpen(false)}
+                      className={({ isActive }) =>
+                        `group flex items-center justify-between text-4xl sm:text-5xl font-display font-black tracking-tight py-4 border-b ${
+                          isActive
+                            ? 'text-[#FF5500] border-[#FF5500]/30'
+                            : 'text-white/70 border-white/10 hover:text-white hover:border-white/30'
+                        } transition-all`
+                      }
+                    >
+                      {link.label}
+                      <ArrowRight className={`w-6 h-6 sm:w-8 sm:h-8 transform -rotate-45 transition-all duration-300 ${isActive ? 'opacity-100 text-[#FF5500]' : 'opacity-0 -translate-x-4 translate-y-4 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0'}`} />
+                    </NavLink>
+                  </motion.div>
+                ))}
+              </div>
             </div>
 
-            <div className="mt-10 relative z-10">
-              <Button to="/contact" variant="primary" className="w-full py-4 text-base">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.4 }}
+              className="relative z-10 mt-auto pt-8"
+            >
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex flex-col">
+                  <span className="text-[10px] text-white/40 uppercase tracking-widest font-bold mb-1.5">Socials</span>
+                  <div className="flex gap-4">
+                    <a href="#" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">IG</a>
+                    <a href="#" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">IN</a>
+                    <a href="#" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">X</a>
+                  </div>
+                </div>
+                <div className="flex flex-col text-right">
+                  <span className="text-[10px] text-white/40 uppercase tracking-widest font-bold mb-1.5">Say Hello</span>
+                  <a href="mailto:hello@siteon.com" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">
+                    hello@siteon.com
+                  </a>
+                </div>
+              </div>
+              <Button to="/contact" variant="primary" className="w-full py-4 text-base flex justify-center" onClick={() => setIsOpen(false)}>
                 Start a Project
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-            </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
