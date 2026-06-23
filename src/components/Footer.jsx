@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import brandLogo from '../assets/brand_logo.png';
+import brandLogo from '../assets/brand_logo.webp';
 
 const Footer = () => {
   const footerLinks = [

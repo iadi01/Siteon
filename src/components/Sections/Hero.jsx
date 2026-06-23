@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, TrendingUp, Star, ArrowUpRight } from 'lucide-react';
 import Button from '../UI/Button';
-import heroImg from '../../assets/hero_illustration.png';
+import heroImg from '../../assets/hero_illustration.webp';
 
 /* ─── Floating badge ─── */
 const FloatingBadge = ({ icon: Icon, label, value, className = '' }) => (

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Target, TrendingUp, ArrowRight, CheckCircle2 } from 'lucide-react';
 import Button from '../UI/Button';
-import growthImg from '../../assets/growth_illustration.png';
+import growthImg from '../../assets/growth_illustration.webp';
 
 const REASONS = [
   {

@@ -1,10 +1,10 @@
-import gitauraImg from '../assets/gitaura_portfolio.png';
-import weatherImg from '../assets/weather_portfolio.png';
-import furnitureImg from '../assets/furniture_portfolio.png';
-import boutiqueImg from '../assets/boutique_portfolio.png';
-import restaurantImg from '../assets/restaurant_portfolio.png';
-import budgetImg from '../assets/budget_portfolio.png';
-import teamjamsImg from '../assets/teamjams_portfolio.png';
+import gitauraImg from '../assets/gitaura_portfolio.webp';
+import weatherImg from '../assets/weather_portfolio.webp';
+import furnitureImg from '../assets/furniture_portfolio.webp';
+import boutiqueImg from '../assets/boutique_portfolio.webp';
+import restaurantImg from '../assets/restaurant_portfolio.webp';
+import budgetImg from '../assets/budget_portfolio.webp';
+import teamjamsImg from '../assets/teamjams_portfolio.webp';
 
 export const projectsData = [
   {

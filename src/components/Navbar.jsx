@@ -3,7 +3,7 @@ import { NavLink, Link, useLocation } from 'react-router-dom';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from './UI/Button';
-import brandLogo from '../assets/brand_logo.png';
+import brandLogo from '../assets/brand_logo.webp';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
