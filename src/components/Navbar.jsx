@@ -39,7 +39,7 @@ const Navbar = () => {
       }`}
       style={{ backgroundColor: (isScrolled || isOpen) ? 'rgba(10, 10, 10, 0.98)' : 'transparent' }}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="relative z-50 max-w-7xl mx-auto px-6 flex items-center justify-between">
 
         {/* ── Brand Logo ── */}
         <Link to="/" className="flex items-center gap-2.5 group">
