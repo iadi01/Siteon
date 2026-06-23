@@ -34,9 +34,10 @@ const Navbar = () => {
         isScrolled ? 'py-3' : 'py-5'
       } ${
         isScrolled || isOpen
-          ? 'bg-black/95 backdrop-blur-xl border-b border-white/6'
+          ? 'backdrop-blur-xl border-b border-white/6'
           : 'bg-transparent border-b border-transparent'
       }`}
+      style={{ backgroundColor: (isScrolled || isOpen) ? 'rgba(10, 10, 10, 0.98)' : 'transparent' }}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
@@ -97,7 +98,8 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden fixed inset-0 bg-black z-40 flex flex-col p-8 pt-28 border-t border-white/5"
+            className="md:hidden fixed inset-0 z-40 flex flex-col p-8 pt-28 border-t border-white/5"
+            style={{ backgroundColor: '#0a0a0a' }}
           >
             <div className="absolute top-0 right-0 w-64 h-64 glow-orange opacity-15 pointer-events-none" />
 
