@@ -2,6 +2,8 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Chatbot from './components/Chatbot';
+
 // Eagerly load Home (first paint)
 import Home from './pages/Home';
 
@@ -14,9 +16,6 @@ const Pricing = lazy(() => import('./pages/Pricing'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogDetail = lazy(() => import('./pages/BlogDetail'));
-
-// Lazy load Chatbot to improve initial TBT and Performance score
-const Chatbot = lazy(() => import('./components/Chatbot'));
 
 // Minimal loading fallback — keeps CLS at 0
 const PageLoader = () => (
@@ -60,9 +59,7 @@ function App() {
         <Footer />
 
         {/* Global AI Chatbot Assistant */}
-        <Suspense fallback={null}>
-          <Chatbot />
-        </Suspense>
+        <Chatbot />
       </div>
     </Router>
   );

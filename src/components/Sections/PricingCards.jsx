@@ -85,7 +85,7 @@ const PricingCards = () => {
           <h2 className="text-4xl md:text-5xl font-display font-extrabold tracking-tight text-white mt-5">
             Tailored <span className="gradient-text">Pricing & Packages</span>
           </h2>
-          <p className="text-zinc-400 text-sm md:text-base mt-4">
+          <p className="text-white/40 text-sm md:text-base mt-4">
             We operate on a clear-scope, value-driven pricing model. Since every business differs, we offer custom-quoted deliverables instead of rigid templates.
           </p>
         </motion.div>
@@ -136,7 +136,7 @@ const PricingCards = () => {
                   <h3 className={`text-xl font-display font-bold mb-2 ${tier.highlighted ? 'text-white' : 'text-white'}`}>
                     {tier.name}
                   </h3>
-                  <p className="text-zinc-400 text-xs leading-relaxed mb-6 min-h-[48px]">
+                  <p className="text-white/40 text-xs leading-relaxed mb-6 min-h-[48px]">
                     {tier.description}
                   </p>
 
@@ -145,7 +145,7 @@ const PricingCards = () => {
                     <span className={`text-2xl font-display font-extrabold ${tier.highlighted ? 'gradient-text' : 'text-white'}`}>
                       Custom Quote
                     </span>
-                    <p className="text-[11px] text-zinc-400 mt-1">Based on scope details and targets</p>
+                    <p className="text-[11px] text-white/30 mt-1">Based on scope details and targets</p>
                   </div>
 
                   {/* Features */}

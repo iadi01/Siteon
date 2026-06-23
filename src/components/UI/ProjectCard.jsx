@@ -34,7 +34,12 @@ const ProjectCard = ({ project, index }) => {
           {/* Inner grid */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:24px_24px]" />
 
-          <img width="800" height="800">
+          <img
+            src={cardImage}
+            alt={name}
+            loading="lazy"
+            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 select-none pointer-events-none opacity-80 group-hover:opacity-100"
+          />
 
           {/* Tagline overlay */}
           <div className="absolute bottom-3 left-4 right-4 bg-black/60 backdrop-blur-md border border-white/10 py-1.5 px-3 rounded-xl">

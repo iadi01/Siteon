@@ -108,7 +108,11 @@ const WhyChoose = () => {
             className="relative w-full max-w-[460px] aspect-square flex items-center justify-center rounded-3xl border border-white/8 bg-white/3 overflow-hidden p-3"
           >
             <div className="absolute inset-0 grid-bg opacity-30" />
-            <img width="800" height="800">
+            <img
+              src={growthImg}
+              alt="Siteon Growth"
+              className="w-full h-full object-cover rounded-2xl animate-float select-none pointer-events-none drop-shadow-[0_20px_40px_rgba(124,58,237,0.3)]"
+            />
           </motion.div>
         </div>
       </div>
