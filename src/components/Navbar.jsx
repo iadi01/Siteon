@@ -34,7 +34,7 @@ const Navbar = () => {
         isScrolled ? 'py-3' : 'py-5'
       } ${
         isScrolled || isOpen
-          ? 'bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-white/6'
+          ? 'bg-black/95 backdrop-blur-xl border-b border-white/6'
           : 'bg-transparent border-b border-transparent'
       }`}
     >
@@ -97,7 +97,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden fixed inset-0 bg-[#0a0a0a] z-40 flex flex-col p-8 pt-28 border-t border-white/5"
+            className="md:hidden fixed inset-0 bg-black z-40 flex flex-col p-8 pt-28 border-t border-white/5"
           >
             <div className="absolute top-0 right-0 w-64 h-64 glow-orange opacity-15 pointer-events-none" />
 
