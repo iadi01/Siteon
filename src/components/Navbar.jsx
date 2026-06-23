@@ -32,12 +32,8 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'py-3' : 'py-5'
-      } ${
-        isScrolled || isOpen
-          ? 'backdrop-blur-xl border-b border-white/6'
-          : 'bg-transparent border-b border-transparent'
-      }`}
-      style={{ backgroundColor: (isScrolled || isOpen) ? 'rgba(10, 10, 10, 0.98)' : 'transparent' }}
+      } backdrop-blur-xl border-b border-white/6`}
+      style={{ backgroundColor: 'rgba(10, 10, 10, 0.98)' }}
     >
       <div className="relative z-50 max-w-7xl mx-auto px-6 flex items-center justify-between">
 
