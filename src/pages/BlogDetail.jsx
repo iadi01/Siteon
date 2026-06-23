@@ -21,7 +21,7 @@ const BlogDetail = () => {
     return (
       <div className="pt-32 pb-24 text-center px-6 bg-[#0a0a0a] min-h-screen">
         <h1 className="text-2xl font-bold text-white mb-4">Article Not Found</h1>
-        <p className="text-white/40 mb-8">The requested article could not be located in our system.</p>
+        <p className="text-zinc-400 mb-8">The requested article could not be located in our system.</p>
         <Link to="/blog" className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#FF5500] gap-1">
           <ArrowLeft className="w-4 h-4" /> Back to Blog
         </Link>
@@ -51,7 +51,7 @@ const BlogDetail = () => {
       <div className="max-w-4xl mx-auto px-6 pt-6">
         <Link
           to="/blog"
-          className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-white/40 hover:text-[#FF5500] transition-colors gap-1.5 group"
+          className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-400 hover:text-[#FF5500] transition-colors gap-1.5 group"
         >
           <ArrowLeft className="w-4 h-4 transform group-hover:-translate-x-0.5 transition-transform" />
           Back to Blog Insights
@@ -69,7 +69,7 @@ const BlogDetail = () => {
         </h1>
 
         {/* Post meta details */}
-        <div className="flex flex-wrap items-center gap-6 text-white/30 text-xs pb-8 border-b border-white/6">
+        <div className="flex flex-wrap items-center gap-6 text-zinc-400 text-xs pb-8 border-b border-white/6">
           <span className="flex items-center gap-1.5">
             <Calendar className="w-4 h-4 text-[#FF5500]" />
             {post.date}
@@ -95,7 +95,7 @@ const BlogDetail = () => {
 
           {/* Keyword tags footer */}
           <div className="pt-10 border-t border-white/5 mt-12">
-            <h4 className="text-xs font-black uppercase tracking-widest text-white/30 mb-4">Target Search Keywords</h4>
+            <h4 className="text-xs font-black uppercase tracking-widest text-zinc-400 mb-4">Target Search Keywords</h4>
             <div className="flex flex-wrap gap-2">
               {post.keywords.map((kw, idx) => (
                 <span
@@ -122,17 +122,17 @@ const BlogDetail = () => {
               </div>
               <div>
                 <p className="text-white text-sm font-bold leading-none">Aditya Sharma</p>
-                <p className="text-white/30 text-[10px] uppercase font-bold mt-1">SEO Specialist</p>
+                <p className="text-zinc-400 text-[10px] uppercase font-bold mt-1">SEO Specialist</p>
               </div>
             </div>
-            <p className="text-white/40 text-[11px] leading-relaxed">
+            <p className="text-zinc-400 text-[11px] leading-relaxed">
               Aditya designs modern responsive websites and develops targeted social media campaigns to scale local brands and startups.
             </p>
           </div>
 
           {/* Social share */}
           <div className="glass-card p-6 rounded-3xl text-left">
-            <h3 className="text-xs font-display font-bold uppercase tracking-widest text-white/30 mb-4 pb-2 border-b border-white/5">
+            <h3 className="text-xs font-display font-bold uppercase tracking-widest text-zinc-400 mb-4 pb-2 border-b border-white/5">
               Share Article
             </h3>
             <div className="flex gap-2.5">
@@ -146,7 +146,7 @@ const BlogDetail = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-xl bg-white/3 border border-white/8 flex items-center justify-center text-white/40 hover:text-[#FF5500] hover:border-[#FF5500]/30 transition-all"
+                  className="w-9 h-9 rounded-xl bg-white/3 border border-white/8 flex items-center justify-center text-zinc-400 hover:text-[#FF5500] hover:border-[#FF5500]/30 transition-all"
                 >
                   <social.Icon className="w-4 h-4" />
                 </a>
@@ -160,7 +160,7 @@ const BlogDetail = () => {
       <section className="bg-white/3 border-t border-white/5 py-16 px-6">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-8 text-center sm:text-left">
           <div>
-            <span className="text-[10px] uppercase font-bold tracking-wider text-white/30">
+            <span className="text-[10px] uppercase font-bold tracking-wider text-zinc-400">
               Read Next
             </span>
             <h4 className="text-2xl font-display font-bold text-white mt-1">

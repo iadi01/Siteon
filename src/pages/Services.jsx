@@ -57,7 +57,7 @@ const Services = () => {
           <h1 className="text-4xl sm:text-6xl font-display font-extrabold text-white mt-5 leading-tight">
             Detailed <span className="gradient-text">Services</span>
           </h1>
-          <p className="text-white/40 text-base sm:text-lg mt-5 max-w-xl mx-auto">
+          <p className="text-zinc-400 text-base sm:text-lg mt-5 max-w-xl mx-auto">
             From coding premium high-performance web pages to structuring comprehensive brand messaging, we help your business capture the local online market.
           </p>
         </motion.div>

@@ -57,7 +57,7 @@ const ServicesSection = ({ showAll = false }) => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-white/30 text-sm md:text-base max-w-sm text-left md:text-right"
+            className="text-zinc-400 text-sm md:text-base max-w-sm text-left md:text-right"
           >
             We don't offer generic templates. We build custom roadmaps designed to optimize your brand, generate qualified leads, and grow revenue.
           </motion.p>
@@ -83,7 +83,7 @@ const ServicesSection = ({ showAll = false }) => {
                 </span>
               </div>
               <div className="w-9 h-9 rounded-full border border-white/10 group-hover:border-[#FF5500] group-hover:bg-[#FF5500] flex items-center justify-center transition-all duration-300">
-                <ArrowUpRight className="w-4 h-4 text-white/30 group-hover:text-white transition-colors" />
+                <ArrowUpRight className="w-4 h-4 text-zinc-400 group-hover:text-white transition-colors" />
               </div>
             </motion.div>
           ))}

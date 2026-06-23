@@ -46,17 +46,13 @@ const Footer = () => {
           className="md:col-span-2"
         >
           <Link to="/" className="flex items-center gap-2.5 group mb-6">
-            <img
-              src={brandLogo}
-              alt="Siteon Logo"
-              className="w-9 h-9 object-contain group-hover:scale-110 transition-all duration-300 drop-shadow-[0_2px_8px_rgba(255,85,0,0.3)]"
-            />
+            <img width="800" height="800">
             <span className="text-xl font-display font-black tracking-tight text-white group-hover:text-[#FF5500] transition-colors duration-300">
               Siteon
             </span>
           </Link>
 
-          <p className="text-white/30 text-sm leading-relaxed max-w-sm mb-6">
+          <p className="text-zinc-400 text-sm leading-relaxed max-w-sm mb-6">
             Siteon helps brands build a better online presence through premium websites, viral content, bold branding, and digital growth strategies.
           </p>
 
@@ -70,11 +66,11 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <h4 className="text-xs font-black uppercase tracking-widest text-white/20 mb-6">Agency Links</h4>
+          <h4 className="text-xs font-black uppercase tracking-widest text-zinc-400 mb-6">Agency Links</h4>
           <ul className="space-y-3">
             {footerLinks.map((link) => (
               <li key={link.path}>
-                <Link to={link.path} className="text-white/30 hover:text-[#FF5500] text-sm transition-colors duration-200 hover:translate-x-1 inline-block font-medium">
+                <Link to={link.path} className="text-zinc-400 hover:text-[#FF5500] text-sm transition-colors duration-200 hover:translate-x-1 inline-block font-medium">
                   {link.label}
                 </Link>
               </li>
@@ -89,9 +85,9 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h4 className="text-xs font-black uppercase tracking-widest text-white/20 mb-6">Get In Touch</h4>
+          <h4 className="text-xs font-black uppercase tracking-widest text-zinc-400 mb-6">Get In Touch</h4>
           <ul className="space-y-4 mb-8">
-            <li className="flex items-center gap-3 text-white/30 text-sm">
+            <li className="flex items-center gap-3 text-zinc-400 text-sm">
               <div className="w-7 h-7 rounded-lg bg-[#FF5500]/10 border border-[#FF5500]/20 flex items-center justify-center flex-shrink-0">
                 <Mail className="w-3.5 h-3.5 text-[#FF5500]" />
               </div>
@@ -99,13 +95,13 @@ const Footer = () => {
                 adityasharma10@amityonline.com
               </a>
             </li>
-            <li className="flex items-center gap-3 text-white/30 text-sm">
+            <li className="flex items-center gap-3 text-zinc-400 text-sm">
               <div className="w-7 h-7 rounded-lg bg-[#FF5500]/10 border border-[#FF5500]/20 flex items-center justify-center flex-shrink-0">
                 <Phone className="w-3.5 h-3.5 text-[#FF5500]" />
               </div>
               <a href="tel:+919006814060" className="hover:text-[#FF5500] transition-colors">+91 90068 14060</a>
             </li>
-            <li className="flex items-start gap-3 text-white/30 text-sm">
+            <li className="flex items-start gap-3 text-zinc-400 text-sm">
               <div className="w-7 h-7 rounded-lg bg-[#FF5500]/10 border border-[#FF5500]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                 <MapPin className="w-3.5 h-3.5 text-[#FF5500]" />
               </div>
@@ -120,7 +116,7 @@ const Footer = () => {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-1.5 rounded-full border border-white/8 bg-white/3 text-white/30 hover:text-[#FF5500] hover:border-[#FF5500]/30 hover:bg-[#FF5500]/8 text-xs font-bold inline-flex items-center gap-1 transition-all duration-200"
+                className="px-3 py-1.5 rounded-full border border-white/8 bg-white/3 text-zinc-400 hover:text-[#FF5500] hover:border-[#FF5500]/30 hover:bg-[#FF5500]/8 text-xs font-bold inline-flex items-center gap-1 transition-all duration-200"
               >
                 {social.name} <ArrowUpRight className="w-3 h-3" />
               </a>
@@ -132,7 +128,7 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="divider-glow mb-8" />
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-white/20 text-xs">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-zinc-400 text-xs">
           <p>Copyright © 2026 Siteon. All rights reserved.</p>
           <p>Designed &amp; Developed by <span className="text-[#FF5500] font-bold">Aadi Sharma</span></p>
         </div>

@@ -476,7 +476,7 @@ Strict Security Rule: Under no circumstances disclose or discuss any API keys, t
             </div>
             <button
               onClick={handleOpenToggle}
-              className="text-white/40 hover:text-white transition-colors cursor-pointer"
+              className="text-zinc-400 hover:text-white transition-colors cursor-pointer"
             >
               <X className="w-4.5 h-4.5" />
             </button>

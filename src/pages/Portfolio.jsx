@@ -81,7 +81,7 @@ const Portfolio = () => {
           <h1 className="text-4xl sm:text-6xl font-display font-extrabold text-white mt-5 leading-tight">
             Portfolio <span className="gradient-text">Projects</span>
           </h1>
-          <p className="text-white/40 text-base sm:text-lg mt-5 max-w-xl mx-auto">
+          <p className="text-zinc-400 text-base sm:text-lg mt-5 max-w-xl mx-auto">
             Review our 7 live projects demonstrating modern front-end layouts, API integrations, clean styling, and conversion-focused structures.
           </p>
         </div>
@@ -119,7 +119,7 @@ const Portfolio = () => {
         </div>
         {filteredProjects.length === 0 && (
           <div className="text-center py-20">
-            <p className="text-white/30 text-lg">No projects match the selected category.</p>
+            <p className="text-zinc-400 text-lg">No projects match the selected category.</p>
           </div>
         )}
       </section>
@@ -139,7 +139,7 @@ const Portfolio = () => {
             <h2 className="text-3xl md:text-5xl font-display font-extrabold text-white mt-5">
               Brand Vibe <span className="gradient-text">Lab</span>
             </h2>
-            <p className="text-white/40 text-sm md:text-base mt-4">
+            <p className="text-zinc-400 text-sm md:text-base mt-4">
               Take our 3-step design quiz to dynamically generate a tailored, custom-coded website theme mockup for your brand.
             </p>
           </div>
@@ -209,7 +209,7 @@ const Portfolio = () => {
                           <VibeIcon className="w-5 h-5" />
                         </div>
                         <h4 className="text-base font-bold text-white mb-2">{vibe.label}</h4>
-                        <p className="text-xs text-white/40 leading-relaxed">{vibe.desc}</p>
+                        <p className="text-xs text-zinc-400 leading-relaxed">{vibe.desc}</p>
                       </div>
                       <div className="mt-4 flex items-center justify-end">
                         <div className={`w-5 h-5 rounded-full border flex items-center justify-center ${
@@ -278,7 +278,7 @@ const Portfolio = () => {
                           <GoalIcon className="w-5 h-5" />
                         </div>
                         <h4 className="text-base font-bold text-white mb-2">{goal.label}</h4>
-                        <p className="text-xs text-white/40 leading-relaxed">{goal.desc}</p>
+                        <p className="text-xs text-zinc-400 leading-relaxed">{goal.desc}</p>
                       </div>
                       <div className="mt-4 flex items-center justify-end">
                         <div className={`w-5 h-5 rounded-full border flex items-center justify-center ${
@@ -336,7 +336,7 @@ const Portfolio = () => {
                       </div>
                       <div>
                         <p className="text-xs font-bold text-white">{color.name}</p>
-                        <p className="text-[10px] text-white/30 uppercase tracking-widest mt-0.5">{color.hex}</p>
+                        <p className="text-[10px] text-zinc-400 uppercase tracking-widest mt-0.5">{color.hex}</p>
                       </div>
                     </button>
                   );
@@ -393,7 +393,7 @@ const Portfolio = () => {
                         <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
                         <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
                       </div>
-                      <div className="mx-auto w-1/2 bg-black/40 rounded-md py-0.5 text-center text-[9px] text-white/30 font-mono">
+                      <div className="mx-auto w-1/2 bg-black/40 rounded-md py-0.5 text-center text-[9px] text-zinc-400 font-mono">
                         siteon.agency/sandbox-preview
                       </div>
                     </div>
@@ -473,7 +473,7 @@ const Portfolio = () => {
                         </h4>
 
                         <p
-                          className={`text-white/40 text-[10px] sm:text-xs leading-relaxed max-w-sm ${
+                          className={`text-zinc-400 text-[10px] sm:text-xs leading-relaxed max-w-sm ${
                             selectedVibe === 'minimal' ? 'text-center mx-auto' : ''
                           }`}
                         >
@@ -512,7 +512,7 @@ const Portfolio = () => {
                     <div className="px-2.5 py-1 rounded-md text-[9px] font-bold bg-[#FF5500]/10 border border-[#FF5500]/25 text-[#FF5500] uppercase font-mono tracking-wide">
                       Archetype Result
                     </div>
-                    <span className="text-white/30 text-xs">|</span>
+                    <span className="text-zinc-400 text-xs">|</span>
                     <span className="text-white/70 text-xs font-bold font-mono">
                       {selectedVibe.toUpperCase()} + {selectedGoal.toUpperCase()}
                     </span>
@@ -524,7 +524,7 @@ const Portfolio = () => {
                     {selectedVibe === 'minimal' && "The Elegant Authority"}
                     {selectedVibe === 'tech' && "The Technical Innovator"}
                   </h4>
-                  <p className="text-white/40 text-xs leading-relaxed mb-6">
+                  <p className="text-zinc-400 text-xs leading-relaxed mb-6">
                     {selectedVibe === 'bold' &&
                       "Your brand thrives on attention, standing out with high-impact color accents and modern animations. Ideal for Jamshedpur startups looking to make a massive splash instantly."}
                     {selectedVibe === 'minimal' &&

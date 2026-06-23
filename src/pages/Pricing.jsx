@@ -27,7 +27,7 @@ const Pricing = () => {
           <h1 className="text-4xl sm:text-6xl font-display font-extrabold text-white mt-5 leading-tight">
             Pricing & <span className="gradient-text">Packages</span>
           </h1>
-          <p className="text-white/40 text-base sm:text-lg mt-5 max-w-xl mx-auto">
+          <p className="text-zinc-400 text-base sm:text-lg mt-5 max-w-xl mx-auto">
             Choose the tier that matches your business growth stage. We provide customized deliverables with zero long-term lock-in contracts.
           </p>
         </div>
@@ -57,7 +57,7 @@ const Pricing = () => {
               <tr className="border-b border-white/5 hover:bg-white/2 transition-colors flex flex-col md:table-row">
                 <td className="p-4 md:p-5 font-semibold text-white/90 bg-white/5 md:bg-transparent text-base md:text-sm">Responsive Layout</td>
                 <td className="p-3 px-4 md:p-5 text-white/50 flex justify-between md:table-cell border-b border-white/5 md:border-none">
-                  <span className="md:hidden font-bold text-white/40 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
+                  <span className="md:hidden font-bold text-zinc-400 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
                   <span className="md:text-center block w-full text-right md:text-center">Yes (Basic)</span>
                 </td>
                 <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell border-b border-white/5 md:border-none">
@@ -73,7 +73,7 @@ const Pricing = () => {
               <tr className="border-b border-white/5 hover:bg-white/2 transition-colors flex flex-col md:table-row">
                 <td className="p-4 md:p-5 font-semibold text-white/90 bg-white/5 md:bg-transparent text-base md:text-sm">Social Media Strategy</td>
                 <td className="p-3 px-4 md:p-5 text-white/50 flex justify-between md:table-cell border-b border-white/5 md:border-none">
-                  <span className="md:hidden font-bold text-white/40 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
+                  <span className="md:hidden font-bold text-zinc-400 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
                   <span className="md:text-center block w-full text-right md:text-center">Audits Only</span>
                 </td>
                 <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell border-b border-white/5 md:border-none">
@@ -88,8 +88,8 @@ const Pricing = () => {
               {/* Row 3 */}
               <tr className="border-b border-white/5 hover:bg-white/2 transition-colors flex flex-col md:table-row">
                 <td className="p-4 md:p-5 font-semibold text-white/90 bg-white/5 md:bg-transparent text-base md:text-sm">SEO & Tagging</td>
-                <td className="p-3 px-4 md:p-5 text-white/30 flex justify-between md:table-cell border-b border-white/5 md:border-none">
-                  <span className="md:hidden font-bold text-white/40 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
+                <td className="p-3 px-4 md:p-5 text-zinc-400 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-zinc-400 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
                   <span className="md:text-center block w-full text-right md:text-center">—</span>
                 </td>
                 <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell border-b border-white/5 md:border-none">
@@ -105,7 +105,7 @@ const Pricing = () => {
               <tr className="border-b border-white/5 hover:bg-white/2 transition-colors flex flex-col md:table-row">
                 <td className="p-4 md:p-5 font-semibold text-white/90 bg-white/5 md:bg-transparent text-base md:text-sm">Conversion Funnels</td>
                 <td className="p-3 px-4 md:p-5 text-white/50 flex justify-between md:table-cell border-b border-white/5 md:border-none">
-                  <span className="md:hidden font-bold text-white/40 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
+                  <span className="md:hidden font-bold text-zinc-400 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
                   <span className="md:text-center block w-full text-right md:text-center">CTA Button</span>
                 </td>
                 <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell border-b border-white/5 md:border-none">
@@ -120,11 +120,11 @@ const Pricing = () => {
               {/* Row 5 */}
               <tr className="hover:bg-white/2 transition-colors flex flex-col md:table-row">
                 <td className="p-4 md:p-5 font-semibold text-white/90 bg-white/5 md:bg-transparent text-base md:text-sm">Growth Consulting</td>
-                <td className="p-3 px-4 md:p-5 text-white/30 flex justify-between md:table-cell border-b border-white/5 md:border-none">
-                  <span className="md:hidden font-bold text-white/40 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
+                <td className="p-3 px-4 md:p-5 text-zinc-400 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-zinc-400 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
                   <span className="md:text-center block w-full text-right md:text-center">—</span>
                 </td>
-                <td className="p-3 px-4 md:p-5 text-white/30 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                <td className="p-3 px-4 md:p-5 text-zinc-400 flex justify-between md:table-cell border-b border-white/5 md:border-none">
                   <span className="md:hidden font-bold text-[#FF5500]/70 text-xs uppercase tracking-wider mt-0.5">Growth</span> 
                   <span className="md:text-center block w-full text-right md:text-center">—</span>
                 </td>

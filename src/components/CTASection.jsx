@@ -88,7 +88,7 @@ const CTASection = () => {
               className="flex flex-wrap items-center justify-center gap-6 mt-12"
             >
               {['✦ Zero hidden fees', '✦ Fast turnaround', '✦ 100% ownership', '✦ Ongoing support'].map((feat, i) => (
-                <span key={i} className="text-xs font-bold text-white/20 uppercase tracking-widest">{feat}</span>
+                <span key={i} className="text-xs font-bold text-zinc-400 uppercase tracking-widest">{feat}</span>
               ))}
             </motion.div>
           </div>
