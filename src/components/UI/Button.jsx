@@ -18,7 +18,7 @@ const Button = ({
     secondary: "border border-white/12 bg-white/4 text-white/70 hover:bg-white/8 hover:border-white/20 hover:text-white backdrop-blur-sm hover:-translate-y-0.5",
     accent: "bg-[#FF5500] text-white shadow-[0_4px_20px_rgba(255,85,0,0.3)] hover:shadow-[0_6px_30px_rgba(255,85,0,0.5)] hover:-translate-y-0.5",
     outline: "border border-[#FF5500]/40 bg-transparent text-[#FF5500] hover:bg-[#FF5500]/10 hover:border-[#FF5500]",
-    text: "text-white/40 hover:text-white px-2 py-1 bg-transparent hover:translate-x-1"
+    text: "text-zinc-400 hover:text-white px-2 py-1 bg-transparent hover:translate-x-1"
   };
 
   const combinedClasses = `${baseStyle} ${variants[variant]} ${className}`;

@@ -27,7 +27,7 @@ const Process = () => {
           <h1 className="text-4xl sm:text-6xl font-display font-extrabold text-white mt-5 leading-tight">
             Our <span className="gradient-text">Process</span>
           </h1>
-          <p className="text-white/40 text-base sm:text-lg mt-5 max-w-xl mx-auto">
+          <p className="text-zinc-400 text-base sm:text-lg mt-5 max-w-xl mx-auto">
             We prioritize absolute scope clarity and transparent milestone stages. Here is how we turn your business goals into digital platforms.
           </p>
         </div>
@@ -45,7 +45,7 @@ const Process = () => {
             <h2 className="text-3xl md:text-5xl font-display font-extrabold text-white mt-5">
               Our 4 Project <span className="gradient-text">Commitments</span>
             </h2>
-            <p className="text-white/40 text-sm md:text-base mt-4">
+            <p className="text-zinc-400 text-sm md:text-base mt-4">
               We do not just build layouts; we create high-performance business engines. Here is how we ensure project success and absolute trust.
             </p>
           </div>
@@ -56,7 +56,7 @@ const Process = () => {
                 <span className="text-[#FF5500] text-xl font-bold font-display">1</span>
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Weekly Staging Demos</h3>
-              <p className="text-white/40 text-xs leading-relaxed">
+              <p className="text-zinc-400 text-xs leading-relaxed">
                 You will receive a private staging link at the end of every week to see the design and codebase grow in real-time. No mystery, full transparency.
               </p>
             </div>
@@ -66,7 +66,7 @@ const Process = () => {
                 <span className="text-white text-xl font-bold font-display">2</span>
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Scope-Locked Pricing</h3>
-              <p className="text-white/40 text-xs leading-relaxed">
+              <p className="text-zinc-400 text-xs leading-relaxed">
                 Every detail is ironed out in our initial strategy phase. Once we sign the contract, the price is fully locked—meaning zero hidden fees or surprise adjustments.
               </p>
             </div>
@@ -76,7 +76,7 @@ const Process = () => {
                 <span className="text-[#FF5500] text-xl font-bold font-display">3</span>
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Direct Engineer Access</h3>
-              <p className="text-white/40 text-xs leading-relaxed">
+              <p className="text-zinc-400 text-xs leading-relaxed">
                 No middleman managers or account executives. You speak directly with the web dev and brand design engineers building your project via a dedicated Slack channel.
               </p>
             </div>
@@ -86,7 +86,7 @@ const Process = () => {
                 <span className="text-white text-xl font-bold font-display">4</span>
               </div>
               <h3 className="text-lg font-bold text-white mb-3">100% Code Ownership</h3>
-              <p className="text-white/40 text-xs leading-relaxed">
+              <p className="text-zinc-400 text-xs leading-relaxed">
                 We believe in complete freedom. Upon project launch, all source repositories, digital assets, and hosting credentials are legally transferred to your business.
               </p>
             </div>
@@ -105,7 +105,7 @@ const Process = () => {
             <h2 className="text-3xl md:text-5xl font-display font-extrabold text-white mt-5">
               The Siteon <span className="gradient-text">Difference</span>
             </h2>
-            <p className="text-white/40 text-sm md:text-base mt-4">
+            <p className="text-zinc-400 text-sm md:text-base mt-4">
               Here is how our modern, hand-coded development and transparent process stack up against standard options.
             </p>
           </div>
@@ -116,39 +116,39 @@ const Process = () => {
                 <tr className="border-b border-white/5 bg-white/2">
                   <th className="p-6 text-sm font-black uppercase text-white/50 tracking-wider">Features & Metrics</th>
                   <th className="p-6 text-sm font-black uppercase text-[#FF5500] tracking-wider bg-[#FF5500]/5">Siteon Global Agency</th>
-                  <th className="p-6 text-sm font-black uppercase text-white/40 tracking-wider">Traditional Agencies / Freelancers</th>
+                  <th className="p-6 text-sm font-black uppercase text-zinc-400 tracking-wider">Traditional Agencies / Freelancers</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5">
                 <tr>
                   <td className="p-6 text-sm font-bold text-white">Delivery Timeline</td>
                   <td className="p-6 text-sm text-white/80 font-semibold bg-[#FF5500]/2">2 - 4 Weeks (Agile sprints)</td>
-                  <td className="p-6 text-sm text-white/30">2 - 3 Months (Heavy back & forth)</td>
+                  <td className="p-6 text-sm text-zinc-400">2 - 3 Months (Heavy back & forth)</td>
                 </tr>
                 <tr>
                   <td className="p-6 text-sm font-bold text-white">Development Tech Stack</td>
                   <td className="p-6 text-sm text-white/80 font-semibold bg-[#FF5500]/2">Hand-coded React, NextJS & CSS (No bloat)</td>
-                  <td className="p-6 text-sm text-white/30">Bloated WordPress templates, element builders</td>
+                  <td className="p-6 text-sm text-zinc-400">Bloated WordPress templates, element builders</td>
                 </tr>
                 <tr>
                   <td className="p-6 text-sm font-bold text-white">Core Web Vitals PageSpeed</td>
                   <td className="p-6 text-sm text-white/80 font-semibold bg-[#FF5500]/2">Guaranteed 95+ (Green scores)</td>
-                  <td className="p-6 text-sm text-white/30">Slow 40 - 60 scores (Unoptimized resources)</td>
+                  <td className="p-6 text-sm text-zinc-400">Slow 40 - 60 scores (Unoptimized resources)</td>
                 </tr>
                 <tr>
                   <td className="p-6 text-sm font-bold text-white">Code & Asset Ownership</td>
                   <td className="p-6 text-sm text-white/80 font-semibold bg-[#FF5500]/2">100% legal transfer on completion</td>
-                  <td className="p-6 text-sm text-white/30">Locked in proprietary subscriptions / templates</td>
+                  <td className="p-6 text-sm text-zinc-400">Locked in proprietary subscriptions / templates</td>
                 </tr>
                 <tr>
                   <td className="p-6 text-sm font-bold text-white">Pricing Model</td>
                   <td className="p-6 text-sm text-white/80 font-semibold bg-[#FF5500]/2">Scope-locked, transparent flat fee</td>
-                  <td className="p-6 text-sm text-white/30">Unpredicted hourly bills & maintenance costs</td>
+                  <td className="p-6 text-sm text-zinc-400">Unpredicted hourly bills & maintenance costs</td>
                 </tr>
                 <tr>
                   <td className="p-6 text-sm font-bold text-white">Project Communication</td>
                   <td className="p-6 text-sm text-white/80 font-semibold bg-[#FF5500]/2">Direct channel to engineers (Slack/WhatsApp)</td>
-                  <td className="p-6 text-sm text-white/30">Account managers, sales agents (Slow updates)</td>
+                  <td className="p-6 text-sm text-zinc-400">Account managers, sales agents (Slow updates)</td>
                 </tr>
               </tbody>
             </table>
@@ -172,7 +172,7 @@ const Process = () => {
               <h3 className="text-lg font-bold text-white mb-2">
                 How long does a standard website design project take?
               </h3>
-              <p className="text-white/40 text-sm leading-relaxed">
+              <p className="text-zinc-400 text-sm leading-relaxed">
                 Typically, a custom single-page landing site takes between 1 to 2 weeks, while larger multi-page projects or platforms take 3 to 4 weeks. This includes planning, coding, and review iterations.
               </p>
             </div>
@@ -181,7 +181,7 @@ const Process = () => {
               <h3 className="text-lg font-bold text-white mb-2">
                 Will I own the source code and files?
               </h3>
-              <p className="text-white/40 text-sm leading-relaxed">
+              <p className="text-zinc-400 text-sm leading-relaxed">
                 Absolutely. Once the project is complete and final assets are signed off, we hand over 100% of the repository ownership, raw files, credentials, and digital designs directly to you.
               </p>
             </div>
@@ -190,7 +190,7 @@ const Process = () => {
               <h3 className="text-lg font-bold text-white mb-2">
                 What support do you offer after launching?
               </h3>
-              <p className="text-white/40 text-sm leading-relaxed">
+              <p className="text-zinc-400 text-sm leading-relaxed">
                 Every launch package includes 30 days of complimentary technical support to fix bugs, configure settings, and monitor load statistics. Extended monthly updates are available under our growth packages.
               </p>
             </div>

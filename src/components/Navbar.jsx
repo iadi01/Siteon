@@ -138,16 +138,16 @@ const Navbar = () => {
             >
               <div className="flex items-center justify-between mb-6">
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase tracking-widest font-bold mb-1.5">Socials</span>
+                  <span className="text-[10px] text-zinc-400 uppercase tracking-widest font-bold mb-1.5">Socials</span>
                   <div className="flex gap-4">
-                    <a href="#" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">IG</a>
-                    <a href="#" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">IN</a>
-                    <a href="#" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">X</a>
+                    <a href="#" aria-label="Instagram" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">IG</a>
+                    <a href="#" aria-label="LinkedIn" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">IN</a>
+                    <a href="#" aria-label="Twitter/X" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">X</a>
                   </div>
                 </div>
                 <div className="flex flex-col text-right">
-                  <span className="text-[10px] text-white/40 uppercase tracking-widest font-bold mb-1.5">Say Hello</span>
-                  <a href="mailto:hello@siteon.com" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">
+                  <span className="text-[10px] text-zinc-400 uppercase tracking-widest font-bold mb-1.5">Say Hello</span>
+                  <a href="mailto:hello@siteon.com" aria-label="Email us at hello@siteon.com" className="text-sm font-semibold text-white/70 hover:text-[#FF5500] transition-colors">
                     hello@siteon.com
                   </a>
                 </div>

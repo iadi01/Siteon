@@ -16,7 +16,7 @@ const FloatingBadge = ({ icon: Icon, label, value, className = '' }) => (
       <Icon className="w-4 h-4 text-[#FF5500]" />
     </div>
     <div>
-      <p className="text-xs text-white/30 leading-none mb-0.5">{label}</p>
+      <p className="text-xs text-zinc-400 leading-none mb-0.5">{label}</p>
       <p className="text-sm font-bold text-white leading-none">{value}</p>
     </div>
   </motion.div>
@@ -78,7 +78,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-white/40 text-base sm:text-lg leading-relaxed max-w-lg mb-10 mt-6"
+            className="text-zinc-400 text-base sm:text-lg leading-relaxed max-w-lg mb-10 mt-6"
           >
             Siteon is a global agency offering premium web dev, custom app dev, bold brand design ID, content marketing, high-performance ads, and app content solutions that scale the growth of brands.
           </motion.p>
@@ -114,7 +114,7 @@ const Hero = () => {
             ].map((s, i) => (
               <div key={i} className="text-left">
                 <p className="text-3xl font-display font-black text-white">{s.value}</p>
-                <p className="text-xs text-white/30 uppercase tracking-widest font-bold mt-0.5">{s.label}</p>
+                <p className="text-xs text-zinc-400 uppercase tracking-widest font-bold mt-0.5">{s.label}</p>
               </div>
             ))}
 

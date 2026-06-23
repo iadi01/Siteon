@@ -34,7 +34,7 @@ const ProjectDetail = () => {
       <div className="max-w-7xl mx-auto px-6 pt-6">
         <Link
           to="/portfolio"
-          className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-white/40 hover:text-[#FF5500] transition-colors gap-1.5 group"
+          className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-400 hover:text-[#FF5500] transition-colors gap-1.5 group"
         >
           <ArrowLeft className="w-4 h-4 transform group-hover:-translate-x-0.5 transition-transform" />
           Back to Portfolio
@@ -55,7 +55,7 @@ const ProjectDetail = () => {
           <p className="text-xl text-[#FF7733] font-medium mb-6">
             {tagline}
           </p>
-          <p className="text-white/40 text-sm md:text-base leading-relaxed mb-8 max-w-2xl">
+          <p className="text-zinc-400 text-sm md:text-base leading-relaxed mb-8 max-w-2xl">
             {description}
           </p>
           
@@ -100,7 +100,7 @@ const ProjectDetail = () => {
               <Layers className="w-5 h-5 text-[#FF5500]" />
               The Problem Statement
             </h2>
-            <p className="text-white/40 text-sm md:text-base leading-relaxed">
+            <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
               {problem}
             </p>
           </div>
@@ -111,7 +111,7 @@ const ProjectDetail = () => {
               <CheckCircle2 className="w-5 h-5 text-[#FF5500]" />
               Our Tactical Solution
             </h2>
-            <p className="text-white/40 text-sm md:text-base leading-relaxed">
+            <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
               {solution}
             </p>
           </div>
@@ -155,15 +155,15 @@ const ProjectDetail = () => {
 
             <div className="space-y-4 text-xs">
               <div className="flex justify-between border-b border-white/5 pb-3">
-                <span className="text-white/40">Client / Concept</span>
+                <span className="text-zinc-400">Client / Concept</span>
                 <span className="text-white/80 font-bold">{name} Showpiece</span>
               </div>
               <div className="flex justify-between border-b border-white/5 pb-3">
-                <span className="text-white/40">Industry</span>
+                <span className="text-zinc-400">Industry</span>
                 <span className="text-white/80 font-bold">Web Development & App Tools</span>
               </div>
               <div className="flex justify-between border-b border-white/5 pb-3">
-                <span className="text-white/40">Development Scope</span>
+                <span className="text-zinc-400">Development Scope</span>
                 <span className="text-white/80 font-bold">100% Fully Responsive SPA</span>
               </div>
             </div>
@@ -188,7 +188,7 @@ const ProjectDetail = () => {
       <section className="bg-white/3 border-t border-white/5 py-16 px-6">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-8 text-center sm:text-left">
           <div>
-            <span className="text-[10px] uppercase font-bold tracking-wider text-white/30">
+            <span className="text-[10px] uppercase font-bold tracking-wider text-zinc-400">
               Up Next
             </span>
             <h4 className="text-2xl font-display font-bold text-white mt-1">

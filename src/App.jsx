@@ -16,6 +16,7 @@ const Pricing = lazy(() => import('./pages/Pricing'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogDetail = lazy(() => import('./pages/BlogDetail'));
+const Chatbot = lazy(() => import('./components/Chatbot'));
 
 // Minimal loading fallback — keeps CLS at 0
 const PageLoader = () => (
@@ -59,7 +60,9 @@ function App() {
         <Footer />
 
         {/* Global AI Chatbot Assistant */}
-        <Chatbot />
+        <Suspense fallback={null}>
+          <Chatbot />
+        </Suspense>
       </div>
     </Router>
   );

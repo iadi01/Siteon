@@ -258,7 +258,7 @@ export default function Chatbot() {
             <div className="px-4 pb-1 flex justify-start">
               <button
                 onClick={() => sendMessage("skip")}
-                className="text-[10px] text-white/20 hover:text-white/40 underline font-normal cursor-pointer transition"
+                className="text-[10px] text-zinc-400 hover:text-zinc-400 underline font-normal cursor-pointer transition"
               >
                 Skip this step
               </button>
@@ -281,7 +281,7 @@ export default function Chatbot() {
           {/* Input Box */}
           <div className="flex gap-2 p-3">
             <input
-              className="flex-1 rounded-xl bg-white/10 px-4 py-3 text-sm text-white outline-none placeholder:text-white/40 border border-transparent focus:border-white/20"
+              className="flex-1 rounded-xl bg-white/10 px-4 py-3 text-sm text-white outline-none placeholder:text-zinc-400 border border-transparent focus:border-white/20"
               placeholder="Ask Siteon AI..."
               value={input}
               onChange={(e) => setInput(e.target.value)}

@@ -96,7 +96,7 @@ const ProcessSteps = () => {
                       {/* Step number */}
                       <span
                         className={`text-sm font-black font-display tracking-widest flex-shrink-0 transition-colors duration-300 ${
-                          isOpen ? 'text-[#FF5500]' : 'text-white/20 group-hover:text-white/40'
+                          isOpen ? 'text-[#FF5500]' : 'text-zinc-400 group-hover:text-zinc-400'
                         }`}
                       >
                         {step.number}
@@ -112,7 +112,7 @@ const ProcessSteps = () => {
                       >
                         <Icon
                           className={`w-5 h-5 transition-colors duration-300 ${
-                            isOpen ? 'text-[#FF5500]' : 'text-white/40 group-hover:text-white/60'
+                            isOpen ? 'text-[#FF5500]' : 'text-zinc-400 group-hover:text-white/60'
                           }`}
                         />
                       </div>
@@ -132,7 +132,7 @@ const ProcessSteps = () => {
                       className={`w-9 h-9 rounded-full border flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
                         isOpen
                           ? 'border-[#FF5500] bg-[#FF5500] text-white'
-                          : 'border-white/10 text-white/30 group-hover:border-white/25 group-hover:text-white/60'
+                          : 'border-white/10 text-zinc-400 group-hover:border-white/25 group-hover:text-white/60'
                       }`}
                     >
                       {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}

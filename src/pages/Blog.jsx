@@ -56,7 +56,7 @@ const Blog = () => {
           <h1 className="text-4xl sm:text-6xl font-display font-extrabold text-white mt-5 leading-tight">
             Our Digital <span className="gradient-text">Growth Blog</span>
           </h1>
-          <p className="text-white/40 text-base sm:text-lg mt-5 max-w-xl mx-auto">
+          <p className="text-zinc-400 text-base sm:text-lg mt-5 max-w-xl mx-auto">
             Practical strategies, creative content ideas, and design tips to scale your business, optimize conversions, and grow your digital brand.
           </p>
         </div>
@@ -74,12 +74,12 @@ const Blog = () => {
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-white/3 border border-white/8 text-white rounded-xl pl-11 pr-4 py-3 text-sm focus:outline-none focus:border-[#FF5500] focus:ring-1 focus:ring-[#FF5500]/25 transition-all placeholder-white/20 min-h-[46px]"
             />
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4.5 h-4.5 text-white/30" />
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4.5 h-4.5 text-zinc-400" />
           </div>
 
           {/* Keyword tags */}
           <div className="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 scrollbar-none justify-start md:justify-end">
-            <span className="text-xs text-white/30 uppercase font-black tracking-widest hidden lg:inline mr-2">Filters:</span>
+            <span className="text-xs text-zinc-400 uppercase font-black tracking-widest hidden lg:inline mr-2">Filters:</span>
             {allKeywords.slice(0, 7).map((kw) => (
               <button
                 key={kw}
@@ -111,7 +111,7 @@ const Blog = () => {
             >
               <div className="p-6 md:p-8">
                 {/* Meta details */}
-                <div className="flex items-center gap-4 text-white/30 text-xs mb-4">
+                <div className="flex items-center gap-4 text-zinc-400 text-xs mb-4">
                   <span className="flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5" />
                     {post.date}
@@ -128,7 +128,7 @@ const Blog = () => {
                 </h3>
 
                 {/* Excerpt */}
-                <p className="text-white/40 text-xs leading-relaxed mb-6 line-clamp-3">
+                <p className="text-zinc-400 text-xs leading-relaxed mb-6 line-clamp-3">
                   {post.excerpt}
                 </p>
 
@@ -178,7 +178,7 @@ const Blog = () => {
 
         {filteredPosts.length === 0 && (
           <div className="text-center py-20">
-            <p className="text-white/30 text-lg">No articles match your search criteria.</p>
+            <p className="text-zinc-400 text-lg">No articles match your search criteria.</p>
           </div>
         )}
       </section>

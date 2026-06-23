@@ -132,7 +132,7 @@ const Contact = () => {
           <h1 className="text-4xl sm:text-6xl font-display font-extrabold text-white mt-5 leading-tight">
             Let's Start Your <span className="gradient-text">Growth Plan</span>
           </h1>
-          <p className="text-white/40 text-base sm:text-lg mt-5 max-w-xl mx-auto">
+          <p className="text-zinc-400 text-base sm:text-lg mt-5 max-w-xl mx-auto">
             Fill out the form below to request a project quote, or reach out directly via official email or WhatsApp details.
           </p>
         </div>
@@ -146,7 +146,7 @@ const Contact = () => {
             <h2 className="text-2xl font-display font-bold text-white mb-2">
               Direct Contact
             </h2>
-            <p className="text-white/40 text-sm leading-relaxed mb-6">
+            <p className="text-zinc-400 text-sm leading-relaxed mb-6">
               Skip the forms? Reach out directly to Aditya Sharma (Aadi) to discuss scope, pricing, or project consults.
             </p>
           </div>
@@ -160,39 +160,39 @@ const Contact = () => {
             <div className="space-y-4">
               {/* Name */}
               <div className="border-b border-white/6 pb-3">
-                <span className="text-[10px] uppercase font-bold text-white/30 block">Name</span>
+                <span className="text-[10px] uppercase font-bold text-zinc-400 block">Name</span>
                 <span className="text-white font-bold">Aditya Sharma / Aadi</span>
               </div>
 
               {/* Email */}
               <div className="border-b border-white/6 pb-3 flex items-start justify-between">
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-white/30 block">Email Address</span>
+                  <span className="text-[10px] uppercase font-bold text-zinc-400 block">Email Address</span>
                   <a href="mailto:adityasharma10@amityonline.com" className="text-white hover:text-[#FF7733] transition-colors font-bold">
                     adityasharma10@amityonline.com
                   </a>
                 </div>
-                <Mail className="w-4 h-4 text-white/30 mt-1" />
+                <Mail className="w-4 h-4 text-zinc-400 mt-1" />
               </div>
 
               {/* Phone / Whatsapp */}
               <div className="border-b border-white/6 pb-3 flex items-start justify-between">
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-white/30 block">Phone / WhatsApp</span>
+                  <span className="text-[10px] uppercase font-bold text-zinc-400 block">Phone / WhatsApp</span>
                   <a href="https://wa.me/919006814060" className="text-white hover:text-[#FF7733] transition-colors font-bold">
                     +91 90068 14060
                   </a>
                 </div>
-                <Phone className="w-4 h-4 text-white/30 mt-1" />
+                <Phone className="w-4 h-4 text-zinc-400 mt-1" />
               </div>
 
               {/* Location */}
               <div className="border-b border-white/6 pb-3 flex items-start justify-between">
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-white/30 block">Headquarters</span>
+                  <span className="text-[10px] uppercase font-bold text-zinc-400 block">Headquarters</span>
                   <span className="text-white font-bold">Jamshedpur, Jharkhand, India</span>
                 </div>
-                <MapPin className="w-4 h-4 text-white/30 mt-1" />
+                <MapPin className="w-4 h-4 text-zinc-400 mt-1" />
               </div>
             </div>
 
@@ -205,7 +205,7 @@ const Contact = () => {
                 className="inline-flex items-center text-xs font-semibold bg-white/3 border border-white/8 text-white/70 hover:text-white hover:border-[#FF5500]/30 transition-all px-3 py-1.5 rounded-lg gap-1"
               >
                 Personal Website
-                <ExternalLink className="w-3.5 h-3.5 text-white/40" />
+                <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
               </a>
               <a
                 href="https://www.linkedin.com/in/iadi0/"
@@ -214,7 +214,7 @@ const Contact = () => {
                 className="inline-flex items-center text-xs font-semibold bg-white/3 border border-white/8 text-white/70 hover:text-white hover:border-[#FF5500]/30 transition-all px-3 py-1.5 rounded-lg gap-1"
               >
                 LinkedIn
-                <ExternalLink className="w-3.5 h-3.5 text-white/40" />
+                <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
               </a>
             </div>
 
@@ -225,7 +225,7 @@ const Contact = () => {
             <ShieldAlert className="w-5 h-5 text-[#FF5500] flex-shrink-0 mt-0.5" />
             <div>
               <h4 className="text-sm font-bold text-white">100% Scope Guarantee</h4>
-              <p className="text-white/40 text-xs mt-1 leading-relaxed">
+              <p className="text-zinc-400 text-xs mt-1 leading-relaxed">
                 We lock detailed project deliverables upfront. No sudden invoice changes, no hidden maintenance fees, and transparent code handover.
               </p>
             </div>
@@ -248,7 +248,7 @@ const Contact = () => {
                 <h3 className="text-2xl font-display font-bold text-white mb-3">
                   Project Request Sent!
                 </h3>
-                <p className="text-white/40 text-sm max-w-md mb-8 leading-relaxed">
+                <p className="text-zinc-400 text-sm max-w-md mb-8 leading-relaxed">
                   Thank you for submitting your details. Aditya Sharma (Aadi) will review your project scope parameters and reach out within 24 hours to schedule a Zoom/Google Meet.
                 </p>
                 <Button onClick={() => setFormStatus('idle')} variant="secondary" className="px-6 py-2.5">
@@ -265,7 +265,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Name */}
                   <div className="flex flex-col text-left">
-                    <label htmlFor="name" className="text-xs font-bold text-white/40 mb-2">
+                    <label htmlFor="name" className="text-xs font-bold text-zinc-400 mb-2">
                       Your Name <span className="text-[#FF5500]">*</span>
                     </label>
                     <input
@@ -282,7 +282,7 @@ const Contact = () => {
 
                   {/* Email */}
                   <div className="flex flex-col text-left">
-                    <label htmlFor="email" className="text-xs font-bold text-white/40 mb-2">
+                    <label htmlFor="email" className="text-xs font-bold text-zinc-400 mb-2">
                       Email Address <span className="text-[#FF5500]">*</span>
                     </label>
                     <input
@@ -301,7 +301,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Business Name */}
                   <div className="flex flex-col text-left">
-                    <label htmlFor="businessName" className="text-xs font-bold text-white/40 mb-2">
+                    <label htmlFor="businessName" className="text-xs font-bold text-zinc-400 mb-2">
                       Business Name
                     </label>
                     <input
@@ -317,7 +317,7 @@ const Contact = () => {
 
                   {/* Service Needed */}
                   <div className="flex flex-col text-left">
-                    <label htmlFor="serviceNeeded" className="text-xs font-bold text-white/40 mb-2">
+                    <label htmlFor="serviceNeeded" className="text-xs font-bold text-zinc-400 mb-2">
                       Service Needed <span className="text-[#FF5500]">*</span>
                     </label>
                     <div className="relative">
@@ -337,7 +337,7 @@ const Contact = () => {
                         <option value="Website Design">Website Design</option>
                         <option value="Digital Growth Consulting">Digital Growth Consulting</option>
                       </select>
-                      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white/40">
+                      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-zinc-400">
                         <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                       </div>
                     </div>
@@ -346,7 +346,7 @@ const Contact = () => {
 
                 {/* Project Budget */}
                 <div className="flex flex-col text-left">
-                  <label htmlFor="projectBudget" className="text-xs font-bold text-white/40 mb-2">
+                  <label htmlFor="projectBudget" className="text-xs font-bold text-zinc-400 mb-2">
                     Project Budget <span className="text-[#FF5500]">*</span>
                   </label>
                   <div className="relative">
@@ -367,7 +367,7 @@ const Contact = () => {
                       <option value="$1,500 - $3,000">$1,500 - $3,000</option>
                       <option value="$3,000+">$3,000+</option>
                     </select>
-                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white/40">
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-zinc-400">
                       <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                     </div>
                   </div>
@@ -375,7 +375,7 @@ const Contact = () => {
 
                 {/* Message */}
                 <div className="flex flex-col text-left">
-                  <label htmlFor="message" className="text-xs font-bold text-white/40 mb-2">
+                  <label htmlFor="message" className="text-xs font-bold text-zinc-400 mb-2">
                     Project Details & Message <span className="text-[#FF5500]">*</span>
                   </label>
                   <textarea
