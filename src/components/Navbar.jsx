@@ -30,10 +30,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
-        isScrolled
-          ? 'py-3 bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-white/6'
-          : 'py-5 bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'py-3' : 'py-5'
+      } ${
+        isScrolled || isOpen
+          ? 'bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-white/6'
+          : 'bg-transparent border-b border-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -95,7 +97,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden fixed inset-0 top-[65px] bg-[#0a0a0a]/98 backdrop-blur-xl z-40 flex flex-col p-8 border-t border-white/5"
+            className="md:hidden fixed inset-0 bg-[#0a0a0a] z-40 flex flex-col p-8 pt-28 border-t border-white/5"
           >
             <div className="absolute top-0 right-0 w-64 h-64 glow-orange opacity-15 pointer-events-none" />
 

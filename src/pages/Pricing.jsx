@@ -43,8 +43,8 @@ const Pricing = () => {
         </h2>
 
         <div className="overflow-x-auto shadow-2xl rounded-3xl border border-white/8">
-          <table className="w-full text-white/70 text-sm border-collapse bg-white/3 backdrop-blur-md">
-            <thead>
+          <table className="w-full text-white/70 text-sm border-collapse bg-white/3 backdrop-blur-md block md:table">
+            <thead className="hidden md:table-header-group">
               <tr className="border-b border-white/8 bg-white/5">
                 <th className="p-5 text-left font-bold text-white">Features</th>
                 <th className="p-5 text-center font-bold text-white/60">Starter</th>
@@ -52,36 +52,86 @@ const Pricing = () => {
                 <th className="p-5 text-center font-bold text-[#FF5500]">Premium</th>
               </tr>
             </thead>
-            <tbody>
-              <tr className="border-b border-white/5 hover:bg-white/2 transition-colors">
-                <td className="p-5 font-semibold text-white/90">Responsive Layout</td>
-                <td className="p-5 text-center text-white/50">Yes (Basic)</td>
-                <td className="p-5 text-center text-white/80">Yes (Custom)</td>
-                <td className="p-5 text-center text-white/80">Yes (Advanced)</td>
+            <tbody className="block md:table-row-group">
+              {/* Row 1 */}
+              <tr className="border-b border-white/5 hover:bg-white/2 transition-colors flex flex-col md:table-row">
+                <td className="p-4 md:p-5 font-semibold text-white/90 bg-white/5 md:bg-transparent text-base md:text-sm">Responsive Layout</td>
+                <td className="p-3 px-4 md:p-5 text-white/50 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-white/40 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">Yes (Basic)</span>
+                </td>
+                <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-[#FF5500]/70 text-xs uppercase tracking-wider mt-0.5">Growth</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">Yes (Custom)</span>
+                </td>
+                <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell">
+                  <span className="md:hidden font-bold text-[#FF5500]/70 text-xs uppercase tracking-wider mt-0.5">Premium</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">Yes (Advanced)</span>
+                </td>
               </tr>
-              <tr className="border-b border-white/5 hover:bg-white/2 transition-colors">
-                <td className="p-5 font-semibold text-white/90">Social Media Strategy</td>
-                <td className="p-5 text-center text-white/50">Audits Only</td>
-                <td className="p-5 text-center text-white/80">Weekly Guide</td>
-                <td className="p-5 text-center text-white/80">Full Execution</td>
+              {/* Row 2 */}
+              <tr className="border-b border-white/5 hover:bg-white/2 transition-colors flex flex-col md:table-row">
+                <td className="p-4 md:p-5 font-semibold text-white/90 bg-white/5 md:bg-transparent text-base md:text-sm">Social Media Strategy</td>
+                <td className="p-3 px-4 md:p-5 text-white/50 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-white/40 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">Audits Only</span>
+                </td>
+                <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-[#FF5500]/70 text-xs uppercase tracking-wider mt-0.5">Growth</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">Weekly Guide</span>
+                </td>
+                <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell">
+                  <span className="md:hidden font-bold text-[#FF5500]/70 text-xs uppercase tracking-wider mt-0.5">Premium</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">Full Execution</span>
+                </td>
               </tr>
-              <tr className="border-b border-white/5 hover:bg-white/2 transition-colors">
-                <td className="p-5 font-semibold text-white/90">SEO & Tagging</td>
-                <td className="p-5 text-center text-white/20">—</td>
-                <td className="p-5 text-center text-white/80">Standard</td>
-                <td className="p-5 text-center text-white/80">Comprehensive</td>
+              {/* Row 3 */}
+              <tr className="border-b border-white/5 hover:bg-white/2 transition-colors flex flex-col md:table-row">
+                <td className="p-4 md:p-5 font-semibold text-white/90 bg-white/5 md:bg-transparent text-base md:text-sm">SEO & Tagging</td>
+                <td className="p-3 px-4 md:p-5 text-white/30 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-white/40 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">—</span>
+                </td>
+                <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-[#FF5500]/70 text-xs uppercase tracking-wider mt-0.5">Growth</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">Standard</span>
+                </td>
+                <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell">
+                  <span className="md:hidden font-bold text-[#FF5500]/70 text-xs uppercase tracking-wider mt-0.5">Premium</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">Comprehensive</span>
+                </td>
               </tr>
-              <tr className="border-b border-white/5 hover:bg-white/2 transition-colors">
-                <td className="p-5 font-semibold text-white/90">Conversion Funnels</td>
-                <td className="p-5 text-center text-white/50">CTA Button</td>
-                <td className="p-5 text-center text-white/80">Interactive form</td>
-                <td className="p-5 text-center text-white/80">Bespoke dynamic forms</td>
+              {/* Row 4 */}
+              <tr className="border-b border-white/5 hover:bg-white/2 transition-colors flex flex-col md:table-row">
+                <td className="p-4 md:p-5 font-semibold text-white/90 bg-white/5 md:bg-transparent text-base md:text-sm">Conversion Funnels</td>
+                <td className="p-3 px-4 md:p-5 text-white/50 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-white/40 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">CTA Button</span>
+                </td>
+                <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-[#FF5500]/70 text-xs uppercase tracking-wider mt-0.5">Growth</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">Interactive form</span>
+                </td>
+                <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell">
+                  <span className="md:hidden font-bold text-[#FF5500]/70 text-xs uppercase tracking-wider mt-0.5">Premium</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">Bespoke dynamic forms</span>
+                </td>
               </tr>
-              <tr className="hover:bg-white/2 transition-colors">
-                <td className="p-5 font-semibold text-white/90">Growth Consulting</td>
-                <td className="p-5 text-center text-white/20">—</td>
-                <td className="p-5 text-center text-white/20">—</td>
-                <td className="p-5 text-center text-white/80">Bi-Weekly Strategy Calls</td>
+              {/* Row 5 */}
+              <tr className="hover:bg-white/2 transition-colors flex flex-col md:table-row">
+                <td className="p-4 md:p-5 font-semibold text-white/90 bg-white/5 md:bg-transparent text-base md:text-sm">Growth Consulting</td>
+                <td className="p-3 px-4 md:p-5 text-white/30 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-white/40 text-xs uppercase tracking-wider mt-0.5">Starter</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">—</span>
+                </td>
+                <td className="p-3 px-4 md:p-5 text-white/30 flex justify-between md:table-cell border-b border-white/5 md:border-none">
+                  <span className="md:hidden font-bold text-[#FF5500]/70 text-xs uppercase tracking-wider mt-0.5">Growth</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">—</span>
+                </td>
+                <td className="p-3 px-4 md:p-5 text-white/80 flex justify-between md:table-cell">
+                  <span className="md:hidden font-bold text-[#FF5500]/70 text-xs uppercase tracking-wider mt-0.5">Premium</span> 
+                  <span className="md:text-center block w-full text-right md:text-center">Bi-Weekly Strategy Calls</span>
+                </td>
               </tr>
             </tbody>
           </table>
