@@ -25,11 +25,11 @@ const Contact = () => {
     const pkg = params.get('package');
     if (pkg) {
       if (pkg === 'starter') {
-        setFormData(prev => ({ ...prev, serviceNeeded: 'Social Media Management', projectBudget: '$200 - $400' }));
+        setFormData(prev => ({ ...prev, serviceNeeded: 'Social Media Management', projectBudget: '₹2,500 - ₹5,000' }));
       } else if (pkg === 'growth') {
-        setFormData(prev => ({ ...prev, serviceNeeded: 'Website Design', projectBudget: '$800 - $1,000' }));
+        setFormData(prev => ({ ...prev, serviceNeeded: 'Website Design', projectBudget: '₹5,000 - ₹10,000' }));
       } else if (pkg === 'premium') {
-        setFormData(prev => ({ ...prev, serviceNeeded: 'Digital Growth Consulting', projectBudget: '$3,000+' }));
+        setFormData(prev => ({ ...prev, serviceNeeded: 'Digital Growth Consulting', projectBudget: '₹10,000+' }));
       }
     }
 
@@ -359,13 +359,12 @@ const Contact = () => {
                       className="w-full bg-[#111] border border-white/8 text-white rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#FF5500] focus:ring-1 focus:ring-[#FF5500]/25 transition-all min-h-[48px] appearance-none"
                     >
                       <option value="">Select Budget Range...</option>
-                      <option value="Under $200">Under $200</option>
-                      <option value="$200 - $400">$200 - $400</option>
-                      <option value="$400 - $800">$400 - $800</option>
-                      <option value="$800 - $1,000">$800 - $1,000</option>
-                      <option value="$1,000 - $1,500">$1,000 - $1,500</option>
-                      <option value="$1,500 - $3,000">$1,500 - $3,000</option>
-                      <option value="$3,000+">$3,000+</option>
+                      <option value="Under ₹2,500">Under ₹2,500</option>
+                      <option value="₹2,500 - ₹5,000">₹2,500 - ₹5,000</option>
+                      <option value="₹5,000 - ₹10,000">₹5,000 - ₹10,000</option>
+                      <option value="₹10,000 - ₹20,000">₹10,000 - ₹20,000</option>
+                      <option value="₹20,000 - ₹50,000">₹20,000 - ₹50,000</option>
+                      <option value="₹50,000+">₹50,000+</option>
                     </select>
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-zinc-400">
                       <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
