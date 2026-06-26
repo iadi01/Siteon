@@ -7,6 +7,8 @@ const tiers = [
   {
     name: 'Starter Package',
     description: 'For small businesses, creators, and freelancers starting their online digital presence journey.',
+    price: '₹2,500',
+    priceDetail: 'Starting price',
     features: [
       'Basic website layout direction',
       'Profile optimization audit',
@@ -14,7 +16,7 @@ const tiers = [
       'Lead capture CTA setup',
       'Email support response guarantee',
     ],
-    ctaText: 'Get Custom Quote',
+    ctaText: 'Get Started',
     ctaTo: '/contact?package=starter',
     highlighted: false,
     tag: 'Self-Start',
@@ -26,6 +28,8 @@ const tiers = [
   {
     name: 'Growth Package',
     description: 'For established local brands and startups requiring professional, conversion-focused assets.',
+    price: '₹5,000',
+    priceDetail: 'Starting price',
     features: [
       'Bespoke landing page design',
       'Social media strategy direction',
@@ -46,6 +50,8 @@ const tiers = [
   {
     name: 'Premium Package',
     description: 'For growth-minded brands demanding full visual authority, custom web apps, and complete strategy.',
+    price: '₹10,000',
+    priceDetail: 'Starting price',
     features: [
       'Full multipage custom website design',
       'Corporate brand guidelines book',
@@ -86,7 +92,7 @@ const PricingCards = () => {
             Tailored <span className="gradient-text">Pricing & Packages</span>
           </h2>
           <p className="text-zinc-400 text-sm md:text-base mt-4">
-            We operate on a clear-scope, value-driven pricing model. Since every business differs, we offer custom-quoted deliverables instead of rigid templates.
+            We operate on a clear-scope, value-driven pricing model. Start with our transparent baseline packages and scale up as your business grows.
           </p>
         </motion.div>
 
@@ -142,10 +148,10 @@ const PricingCards = () => {
 
                   {/* Price label */}
                   <div className={`mb-6 pb-6 border-b ${tier.highlighted ? 'border-[#FF5500]/20' : 'border-white/6'}`}>
-                    <span className={`text-2xl font-display font-extrabold ${tier.highlighted ? 'gradient-text' : 'text-white'}`}>
-                      Custom Quote
+                    <span className={`text-3xl font-display font-extrabold ${tier.highlighted ? 'gradient-text' : 'text-white'}`}>
+                      {tier.price}
                     </span>
-                    <p className="text-[11px] text-zinc-400 mt-1">Based on scope details and targets</p>
+                    <p className="text-[11px] text-zinc-400 mt-1">{tier.priceDetail}</p>
                   </div>
 
                   {/* Features */}
